@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>I'm Sorry ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="hearts-container"></div>
+
+    <!-- PAGE 1: WELCOME PAGE -->
+
+    <section id="welcomePage" class="card">
+
+        <div class="main-heart">💗</div>
+
+        <h1>Hey, My Love!</h1>
+
+        <p class="welcome-text">
+            I made something special for you.
+            <br><br>
+            Please take a little moment to open it. ❤️
+        </p>
+
+        <button onclick="openHeart()">
+            Open My Heart ❤️
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 2: APOLOGY PAGE -->
+
+    <section id="apologyPage" class="card hidden">
+
+        <div class="main-heart">🥺</div>
+
+        <h1>I'm Really Sorry ❤️</h1>
+
+        <p>
+            I know things haven't been perfect between us,
+            and I genuinely want to apologise.
+            <br><br>
+
+            I know I started the argument, and I should have
+            understood your feelings instead of letting things
+            turn into a fight.
+            <br><br>
+
+            I never wanted to hurt you. Sometimes I make mistakes,
+            but that doesn't mean I don't care about you.
+            <br><br>
+
+            I want to understand you better, listen to you more,
+            and become a better person for us.
+            <br><br>
+
+            You are important to me, and I never want you to
+            feel otherwise.
+        </p>
+
+        <div class="signature">
+            Your BABY. 💗
+        </div>
+
+        <button onclick="openMemories()">
+            Our Beautiful Memories 📸
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 3: MEMORIES GALLERY -->
+
+    <section id="memoriesPage" class="card hidden">
+
+        <div class="main-heart">📸💗</div>
+
+        <h1>Our Little Memories</h1>
+
+        <p>
+            Every picture has a story,
+            and every memory is special to me.
+        </p>
+
+        <div class="gallery">
+
+            <div class="polaroid">
+                <img src="images/photo1.jpg" alt="Our memory 1">
+                <p>Memory 1 ❤️</p>
+            </div>
+
+            <div class="polaroid">
+                <img src="images/photo2.jpg" alt="Our memory 2">
+                <p>Memory 2 💗</p>
+            </div>
+
+            <div class="polaroid">
+                <img src="images/photo3.jpg" alt="Our memory 3">
+                <p>Memory 3 🥰</p>
+            </div>
+
+            <div class="polaroid">
+                <img src="images/photo4.jpg" alt="Our memory 4">
+                <p>Memory 4 💕</p>
+            </div>
+
+        </div>
+
+        <p class="memory-text">
+            I hope we make many more beautiful memories together. ❤️
+        </p>
+
+        <button onclick="openLetterPage()">
+            Read My Letter 💌
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 4: LOVE LETTER -->
+
+    <section id="letterPage" class="card hidden">
+
+        <div class="main-heart">💌</div>
+
+        <h1>A Little Letter For You</h1>
+
+        <p>
+            I have something more to say...
+        </p>
+
+        <div class="envelope" onclick="toggleLetter()">
+
+            <div class="envelope-back"></div>
+
+            <div class="letter">
+
+                <h2>My Love ❤️</h2>
+
+                <p>
+                    I don't want a perfect relationship.
+                    I just want us to understand each other,
+                    communicate better, and never stop trying.
+                    <br><br>
+
+                    I know I won't always get everything right,
+                    but I promise to keep learning from my mistakes.
+                    <br><br>
+
+                    Thank you for being a beautiful part of my life.
+                    You mean more to me than words can explain.
+                    <br><br>
+
+                    I love you. ❤️
+                </p>
+
+                <div class="signature">
+                    Your BABY. 💗
+                </div>
+
+            </div>
+
+            <div class="envelope-front"></div>
+
+            <div class="envelope-flap"></div>
+
+            <div class="envelope-heart">❤️</div>
+
+        </div>
+
+        <p class="small-text">
+            Tap the envelope to open or close the letter.
+        </p>
+
+        <button onclick="openForgivenessPage()">
+            One Last Question... 💗
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 5: FORGIVENESS PAGE -->
+
+    <section id="forgivenessPage" class="card hidden">
+
+        <div class="main-heart">🥺💗</div>
+
+        <h1>One Last Question...</h1>
+
+        <p class="forgiveness-text">
+
+            I know that saying sorry doesn't fix everything.
+
+            <br><br>
+
+            But I hope we can start again, understand each
+            other better, and make many more beautiful memories.
+
+            <br><br>
+
+            You mean a lot to me, and I genuinely hope
+            we can work through this together. ❤️
+
+        </p>
+
+        <div class="forgiveness-heart">💕</div>
+
+        <h2 class="forgiveness-question">
+            Can You Forgive Me? 🥺
+        </h2>
+
+        <div class="forgiveness-buttons">
+
+            <button class="yes-button"
+                onclick="showForgivenessResponse('yes')">
+
+                YES, I FORGIVE YOU ❤️
+
+            </button>
+
+            <button class="shaggy-button"
+                onclick="showForgivenessResponse('shaggy')">
+
+                MY NAME IS SHAGGY 🐶
+
+            </button>
+
+        </div>
+
+
+        <!-- RESPONSE BOX -->
+
+        <div id="forgivenessResponse" class="response-box hidden">
+
+            <div id="responseEmoji" class="response-emoji"></div>
+
+            <h2 id="responseHeading"></h2>
+
+            <p id="responseMessage"></p>
+
+            <!-- FINAL MESSAGE -->
+
+            <p id="finalMessage" class="final-message hidden">
+
+                No matter what, you will always be my favourite person. ❤️
+
+            </p>
+
+        </div>
+
+        <p class="small-text">
+            Made with all my love. 💗
+        </p>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
